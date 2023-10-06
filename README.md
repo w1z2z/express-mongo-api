@@ -16,7 +16,7 @@
       SECRET_SALT=qwe123
       ```
 
-      Замените `PORT` и `MONGO_URL` на значения, подходящие для вашей конфигурации.
+      Замените `PORT` и `MONGO_URL` и `SECRET_SALT` на значения, подходящие для вашей конфигурации.
 
 3. **Установка зависимостей**
     - Откройте терминал и выполните команду для установки зависимостей проекта:
@@ -49,4 +49,16 @@
      "username": "yourusername"
    }
 
+Если все поля заполнены корректно, вы получите успешный ответ с данными нового пользователя:
 
+   ```json
+{
+    "username": "yourusername",
+    "email": "example@email.com",
+    "authentication": {
+        "password": "b07620a3fcd38c2760eefac6277aba2b1768c1a74a690c5890ffbb8377fccf7a",
+        "salt": "dnjmSxQhE1AGZh9CWsUMaJzq8OeSEhIr/G/wa+eULzIcB2FrBKLpaTNr/r/LfEZyzPbC/gnwwz+ceBT3ZGhGmTLQVBisKQdc48tzSqIduj0brRs71LMNUsiptURJ6DE85OvvU/Oa+6cvygDfLfsSoz1azZbaRAuu1L1xh1IKh7Q="
+    },
+    "_id": "651f6725b97e00aa5c92b06e",
+    "__v": 0
+}
